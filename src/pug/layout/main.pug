@@ -1,0 +1,17 @@
+include ../utils/mixins
+include ../blocks/card
+block variables
+
+doctype html
+html(lang='ru')
+  head
+    meta(charset='utf-8')
+    title #{title}
+    meta(name="description", content=description)
+    block head
+
+  body(class=pageClass) 
+    block content
+      
+
+    block script
